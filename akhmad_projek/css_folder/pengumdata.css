@@ -1,0 +1,142 @@
+/* Global styling */
+body {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #51557E;
+    font-family: "Shippori Mincho B1";
+    color: white;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+/* Headline styling */
+.headline {
+    width: 100%;
+    height: 100px;
+    margin-top: -9px;
+    background-color: #1B2430;
+    display: flex;
+    place-items: center;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.headline a {
+    color: white;
+    margin-left: 8%;
+    font-size: 30px;
+}
+
+.headline label {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 23%;
+}
+
+/* Content subtitle styling */
+.content_subtitle {
+    text-align: center;
+    margin-top: 20px;
+    padding: 0 20px;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.content_subtitle p {
+    margin-top: 10px;
+    font-size: 17px;
+    max-width: 100%;
+}
+
+/* Main content styling */
+.main_content {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 20px;
+}
+
+.line1, .line2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container_content {
+    width: 45%;
+    height: 170px;
+    background-color: #816797;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 30px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.title_content {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.container_content p {
+    margin-top: 10px;
+}
+
+/* Media queries */
+@media (max-width: 1024px) {
+    /* Tablets dan perangkat dengan lebar layar antara 768px dan 1024px */
+    .headline label {
+        font-size: 20px;
+        margin-left: 10%;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Perangkat iPad dan smartphone dalam orientasi potrait */
+    .headline label {
+        font-size: 18px;
+        margin-left: 5%;
+    }
+
+    .title {
+        font-size: 25px;
+    }
+
+    .content_subtitle p {
+        font-size: 15px;
+    }
+
+    .container_content {
+        width: 90%; /* Menyesuaikan lebar konten */
+        margin: 10px; /* Menyesuaikan margin */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Perangkat dengan layar lebih kecil seperti smartphone potrait */
+    .headline label {
+        font-size: 16px;
+        margin-left: 5%;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .content_subtitle p {
+        font-size: 14px;
+    }
+
+    .container_content {
+        width: 100%; /* Menyesuaikan lebar konten */
+        margin: 10px; /* Menyesuaikan margin */
+    }
+}

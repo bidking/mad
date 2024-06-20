@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #51557E;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.headline {
+    width: 100%;
+    height: 100px;
+    margin-top: -9px;
+    background-color: #1B2430;
+    display: flex;
+    align-items: center;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.headline a {
+    color: white;
+    margin-left: 8%;
+    font-size: 30px;
+}
+
+.headline label {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 23%;
+}
+
+.content {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.content h1 {
+    margin-top: 0;
+}
+
+.section {
+    background-color: #816797;
+    border-radius: 20px;
+    margin: 20px 0;
+    padding: 20px;
+}
+
+.section-header {
+    color: #816797;
+    background-color: #1B2430;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.section-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-content p {
+    margin: 10px 0;
+}
+
+.section-content img {
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .headline label {
+        font-size: 20px;
+        margin-left: 5%;
+    }
+
+    .headline a {
+        font-size: 24px;
+        margin-left: 5%;
+    }
+
+    .content {
+        padding: 10px;
+    }
+
+    .section-header {
+        font-size: 18px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .headline label {
+        font-size: 18px;
+        margin-left: 5%;
+    }
+
+    .headline a {
+        font-size: 20px;
+        margin-left: 5%;
+    }
+
+    .content {
+        padding: 5px;
+    }
+
+    .section {
+        margin: 10px 0;
+        padding: 10px;
+    }
+
+    .section-header {
+        font-size: 16px;
+        padding: 6px;
+    }
+
+    .section-content img {
+        width: 80px;
+    }
+}

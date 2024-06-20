@@ -1,0 +1,183 @@
+body {
+    display: block;
+    width: 100%;
+    height: 900px;
+    background-color: #51557E;
+    font-family: "Shippori Mincho B1";
+    place-items: center;
+    color: white;
+    margin: 0; /* Tambahkan margin 0 untuk menghindari margin default */
+}
+
+.head {
+    margin: -10px 0 0 -10px;
+    height: 400px;
+    background-color: #1B2430;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.head_content {
+    position: absolute;
+    display: flex;
+    align-items: center; /* Ganti place-items dengan align-items */
+    margin-top: 30px;
+    width: 545px;
+    left: 27%;
+    transform: translateX(-50%);
+}
+
+.head_content label {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    width: max-content;
+}
+
+.image_home {
+    background: url('../image/home_image_menu.png') no-repeat;
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    /* margin-left: 30px; */
+}
+
+.image_home:hover {
+    cursor: pointer;
+}
+
+.image_menu {
+    position: absolute;
+    background-color: #51557E;
+    width: 400px;
+    height: 250px;
+    margin: 7% 30% auto;
+    border-radius: 30px;
+    display: flex;
+
+    justify-content: center;
+    align-items: center; /* Tambahkan align-items untuk pemusatan vertikal */
+}
+
+.image {
+    background: url('../image/Menu_image.png') no-repeat;
+    background-size: cover;
+    width: 200px;
+    height: 150px;
+    margin: 40px auto 0 100px; /* Gabungkan margin */
+}
+
+.Next {
+    background-color: #816797;
+    width: 500px;
+    height: 130px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Menambahkan spasi antara label dan ikon */
+    padding: 0 20px; /* Menambahkan padding agar lebih terlihat */
+    margin: 2% auto; /* Mengurangi margin antar tombol */
+}
+
+a {
+    text-decoration: none;
+    width: 100%; /* Lebar tombol a menjadi 100% */
+}
+
+.Next label {
+    font-weight: bold;
+    color: white;
+    width: 280px;
+}
+
+.next_button {
+    height: 80px;
+    width: 80px;
+    background-color: #51557E;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.next_button i {
+    font-size: 40px;
+    font-weight: bold;
+    color: #816797;
+}
+
+.content {
+    display: grid;
+    place-items: center;
+}
+
+/* Media Queries untuk responsif pada berbagai ukuran layar */
+
+/* Untuk layar kecil (misalnya smartphone) */
+@media (max-width: 767px) {
+    .head_content {
+        width: 90%;
+        left: 50%; /* Mengurangi lebar untuk responsif */
+    }
+
+    .image_menu {
+        width: 90%; /* Mengurangi lebar untuk responsif */
+        margin: 35% 7% auto;
+        height: 200px;
+         /* Penyesuaian margin */
+    }
+
+    .Next {
+        width: 90%; /* Mengurangi lebar untuk responsif */
+        font-size: 16px; /* Mengurangi ukuran font */
+        height: 100px; /* Mengurangi tinggi untuk responsif */
+        margin-top: 2%; /* Penyesuaian margin */
+    }
+
+    .next_button {
+        width: 60px; /* Mengurangi lebar untuk responsif */
+        height: 60px; /* Mengurangi tinggi untuk responsif */
+    }
+
+    .Next label {
+        margin-left: 5%; /* Penyesuaian margin */
+        width: 70%; /* Mengurangi lebar untuk responsif */
+    }
+}
+
+/* Untuk layar medium (misalnya tablet) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .head_content {
+        width: 90%;
+        left: 50%; /* Mengurangi lebar untuk responsif */
+    }
+
+    .image_menu {
+        width: 90%; /* Mengurangi lebar untuk responsif */
+        margin: 15% 7% auto;
+        height: 200px;
+         /* Penyesuaian margin */
+    }
+
+    .Next {
+        width: 80%; /* Mengurangi lebar untuk responsif */
+        font-size: 18px; /* Mengurangi ukuran font */
+        height: 120px; /* Mengurangi tinggi untuk responsif */
+        margin-top: 5%; /* Penyesuaian margin */
+    }
+
+    .next_button {
+        width: 70px; /* Mengurangi lebar untuk responsif */
+        height: 70px; /* Mengurangi tinggi untuk responsif */
+    }
+
+    .Next label {
+        margin-left: 8%; /* Penyesuaian margin */
+        width: 60%; /* Mengurangi lebar untuk responsif */
+    }
+}
+
+/* Untuk layar besar (misalnya desktop) */
+@media (min-width: 1024px) {
+    /* Tidak ada perubahan yang signifikan dari desain aslinya */
+}
